@@ -79,7 +79,7 @@ export default function Home() {
                       </div>
                     </div>
                     <motion.div whileHover={{ scale: 1.05, rotateY: 10, rotateX: 5 }} className="relative w-full aspect-square max-w-sm rounded-[40px] overflow-hidden border border-white/10 shadow-2xl shadow-cyan-900/20 cursor-pointer">
-                      <Image src="/images/vian-profile.jpg" alt="Profil" fill style={{ objectFit: "cover" }} />
+                      <Image src="/images/foto-baru.jpg" alt="Profil" fill style={{ objectFit: "cover" }} />
                     </motion.div>
                   </motion.div>
                 )}
