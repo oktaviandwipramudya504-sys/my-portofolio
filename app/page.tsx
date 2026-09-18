@@ -13,6 +13,7 @@ const projects = [
   { title: "Spotify Data Analyst", desc: "Analisis data streaming musik.", tech: "Data Analytics", link: "https://github.com/oktaviandwipramudya504-sys/spotify-data-analyst-portfolio", image: "/images/spotify-analytics.png" },
   { title: "Frontend Home Project", desc: "Pengembangan antarmuka web.", tech: "Next.js", link: "https://github.com/oktaviandwipramudya504-sys/frontend-home-project", image: "/images/frontend-home.png" },
   { title: "Frontend Layout", desc: "Struktur layout web.", tech: "React", link: "https://github.com/oktaviandwipramudya504-sys/frontend-layout", image: "/images/frontend-layout.png" },
+  { title: "Flea Market App", desc: "Pengembangan aplikasi mobile.", tech: "React Native", link: "https://https://github.com/oktaviandwipramudya504-sys/lapak-loak", image: "/images/home_pasar_loak.png" }
 ];
 
 const certificates = [
@@ -67,8 +68,9 @@ export default function Home() {
                   <motion.div key="about" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -30 }} transition={{ duration: 0.6 }} className="max-w-4xl grid md:grid-cols-2 gap-12 items-center">
                     <div>
                       <h1 className="text-5xl font-black mb-6">Oktavian<br />Dwi Pramudya</h1>
-                      <p className="text-gray-400 text-md mb-8 leading-relaxed">
-                        Saya adalah pengembang web dan spesialis analisis data yang berdedikasi dalam membangun solusi digital yang efisien. Dengan penguasaan pada sisi Frontend (HTML, CSS, Bootstrap) dan Backend (PHP, MySQL, Python), saya mampu merancang aplikasi web yang fungsional dan responsif. Selain pengembangan web, saya memiliki mampu dalam Data Mining dan membangun sistem analisis data yang kompleks. Saya memanfaatkan Power BI untuk menyajikan visualisasi data yang informatif, serta bekerja dengan presisi menggunakan VS Code dan Sublime Text untuk memastikan kualitas kode yang optimal.
+                      <p className="text-gray-400 text-md mb-8 leading-relaxed whitespace-pre-line">
+                        Data Analyst with 2+ years of experience effectively building and analyzing both large- and small-scale datasets using up-to-date tools, with a strong foundation in statistical analysis and data visualization.{"\n\n"}
+                        Proficient in PHP, HTML, CSS, Python, MySQL, and Bootstrap through a range of academic projects. Eager to apply problem-solving skills to data processing and analysis.
                       </p>
                       <div className="flex gap-4 text-2xl text-gray-400">
                         <a href="https://github.com/oktaviandwipramudya504-sys" target="_blank" className="hover:text-white transition"><FaGithub /></a>
@@ -79,7 +81,14 @@ export default function Home() {
                       </div>
                     </div>
                     <motion.div whileHover={{ scale: 1.05, rotateY: 10, rotateX: 5 }} className="relative w-full aspect-square max-w-sm rounded-[40px] overflow-hidden border border-white/10 shadow-2xl shadow-cyan-900/20 cursor-pointer">
-                      <Image src="/images/foto-baru.jpg" alt="Profil" fill style={{ objectFit: "cover" }} />
+                      <Image 
+                        src="/images/foto-saya.jpeg" 
+                        alt="Profil" 
+                        fill 
+                        sizes="(max-width: 768px) 100vw, 384px"
+                        priority
+                        style={{ objectFit: "cover" }} 
+                      />
                     </motion.div>
                   </motion.div>
                 )}
