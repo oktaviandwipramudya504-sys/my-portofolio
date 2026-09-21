@@ -58,8 +58,6 @@ export default function Home() {
                   <button onClick={() => setActiveTab("about")} className="hover:text-cyan-400 transition">About</button>
                   <button onClick={() => setActiveTab("projects")} className="hover:text-cyan-400 transition">Projects</button>
                   <button onClick={() => setActiveTab("certificates")} className="hover:text-cyan-400 transition">Certificates</button>
-                  <button onClick={() => setActiveTab("education")} className="hover:text-cyan-400 transition">Education</button>
-                  <button onClick={() => setActiveTab("work experience")} className="hover:text-cyan-400 transition">Work Experience</button>
                 </div>
               </div>
             </nav>
