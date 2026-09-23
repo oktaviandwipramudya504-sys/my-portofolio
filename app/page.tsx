@@ -21,6 +21,8 @@ const certificates = [
   { title: "Sertifikat Teknisi & Sistem Komputer - Bagian 2", issuer: "Cyber Academy", date: "", image: "/images/sertif-cyber-2.png" },
   { title: "Sertifikat Kemampuan Bahasa Inggris", issuer: "Lembaga Bahasa", date: "", image: "/images/sertif-inggris.png" },
   { title: "Sertifikat Pelatihan Web Development", issuer: "Trainit", date: "", image: "/images/sertif-trainit.png" },
+  { title: "HubSpot Reporting Certified", issuer: "HubSpot Academy", date: "Sep 2026", image: "/images/sertifikat_1.png" },
+  { title: "HubSpot Reporting Certified - Bagian 2", issuer: "HubSpot Academy", date: "Sep 2026", image: "/images/sertifikat_2.png" },
 ];
 
 export default function Home() {
