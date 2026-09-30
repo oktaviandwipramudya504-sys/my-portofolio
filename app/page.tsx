@@ -118,7 +118,7 @@ export default function Home() {
                           )}
 
                           <div className={`relative w-full ${expandedId === i ? "h-64" : "h-40"} mb-4 rounded-xl overflow-hidden bg-slate-900 transition-all`}>
-                            <Image src={p.image} alt={p.title} fill style={{ objectFit: "cover" }} />
+                            <Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: "cover" }} />
                           </div>
                           <h3 className="font-bold mb-2 text-xl">{p.title}</h3>
                           <p className={`text-gray-400 mb-4 ${expandedId === i ? "text-base" : "text-xs line-clamp-2"}`}>{p.desc}</p>
@@ -141,7 +141,7 @@ export default function Home() {
                       {certificates.map((c, i) => (
                         <button key={i} type="button" className="bg-black/40 backdrop-blur-sm p-4 rounded-3xl border border-blue-600 flex flex-col items-center text-center hover:border-cyan-400 transition cursor-pointer w-full animate-[float_3s_ease-in-out_infinite] hover:scale-105" onClick={() => setOpenCertificate(c)}>
                           <div className="relative w-full aspect-[4/3] mb-4 rounded-xl overflow-hidden border border-white/10 shadow-lg">
-                            <Image src={c.image} alt={c.title} fill style={{ objectFit: "cover" }} className="hover:scale-105 transition duration-300" />
+                            <Image src={c.image} alt={c.title} fill sizes="(max-width: 768px) 50vw, 25vw" style={{ objectFit: "cover" }} className="hover:scale-105 transition duration-300" />
                           </div>
                           <div className="w-full">
                             <h3 className="font-bold text-sm mb-1 line-clamp-2">{c.title}</h3>
@@ -157,7 +157,7 @@ export default function Home() {
                           <button type="button" className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={() => setOpenCertificate(null)} />
                           <motion.div className="relative w-full max-w-2xl bg-black/40 backdrop-blur-sm border border-blue-600 p-2 rounded-2xl" initial={{ scale: 0.9 }} animate={{ scale: 1 }} exit={{ scale: 0.9 }}>
                             <div className="relative w-full aspect-[4/3]">
-                              <Image src={openCertificate.image} alt={openCertificate.title} fill style={{ objectFit: "contain" }} />
+                              <Image src={openCertificate.image} alt={openCertificate.title} fill sizes="(max-width: 768px) 100vw, 672px" style={{ objectFit: "contain" }} />
                             </div>
                             <button className="absolute -top-10 right-0 text-white bg-white/10 p-2 rounded-full" onClick={() => setOpenCertificate(null)}>Close</button>
                           </motion.div>
