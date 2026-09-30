@@ -13,7 +13,7 @@ const projects = [
   { title: "Spotify Data Analyst", desc: "Analisis data streaming musik.", tech: "Data Analytics", link: "https://github.com/oktaviandwipramudya504-sys/spotify-data-analyst-portfolio", image: "/images/spotify-analytics.png" },
   { title: "Frontend Home Project", desc: "Pengembangan antarmuka web.", tech: "Next.js", link: "https://github.com/oktaviandwipramudya504-sys/frontend-home-project", image: "/images/frontend-home.png" },
   { title: "Frontend Layout", desc: "Struktur layout web.", tech: "React", link: "https://github.com/oktaviandwipramudya504-sys/frontend-layout", image: "/images/frontend-layout.png" },
-  { title: "Flea Market App", desc: "Pengembangan aplikasi mobile.", tech: "React Native", link: "https://https://github.com/oktaviandwipramudya504-sys/lapak-loak", image: "/images/home_pasar_loak.png" }
+  { title: "Flea Market App", desc: "Pengembangan aplikasi web loak.", tech: "Next.js/Supabase", link: "https://github.com/oktaviandwipramudya504-sys/lapak-loak", image: "/images/home_pasar_loak.png" },
   { title: "Coffee Jogja Executive Dashboard", desc: "Dashboard eksekutif interaktif dan analisis data kedai kopi di DIY.", tech: "HTML/Tailwind/MySQL", link: "https://github.com/oktaviandwipramudya504-sys/dashboard-eksekutif", image: "/images/dashboard-preview.png" }
 ];
 
@@ -108,7 +108,6 @@ export default function Home() {
                         >
                           {expandedId === i && <div className="fixed inset-0 bg-black/80 -z-10" onClick={() => setExpandedId(null)} />}
                           
-                          {/* Tombol Close */}
                           {expandedId === i && (
                             <button 
                               className="absolute top-6 right-6 z-[60] text-white bg-white/20 p-2.5 rounded-full hover:bg-white/40 transition backdrop-blur-md shadow-lg" 
