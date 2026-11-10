@@ -1,0 +1,2 @@
+- [ ] Update root package.json to add dev/build/start/lint scripts that forward to my-portofolio/
+- [ ] Run `npm run dev` from repo root to verify
